@@ -25,13 +25,13 @@ namespace FirstTextRPG
 
         public void introAnswerChecker(String input)
         {
-            if (input == "y" || input == "Y") //checks for yes
+            if (input.ToLower() == "y") //checks for yes
             {
                 //TESTLINE
                 Console.WriteLine("YES HAS BEEN ENTERED");
                 introChecked = true;
             } //checks for yes
-            else if (input == "n" || input == "N") //Checks for no
+            else if (input.ToLower() == "n") //Checks for no
             {
                 //TESTLINE
                 Console.WriteLine("NO HAS BEEN ENTERED");

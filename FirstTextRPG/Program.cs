@@ -15,13 +15,16 @@ namespace FirstTextRPG
      *
      *//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     
+
+        //RIGHT NOW YOU DONT HAVE CHARACTER CREATION OR INVENTORY OR ANYTHING, JUST TESTING COMMANDS FROM CAMPSITE BEFORE WE GO ANYWHERE ELSE.
     class Program
     {
          
         static void Main(string[] args)
         {
             //instnaciate classes
-            GameStart gameStart = new GameStart(); 
+            GameStart gameStart = new GameStart();
+            CampSite campSite = new CampSite();
 
             //intro to game, ask if they want new game or existing save
             while(gameStart.introChecked == false)
@@ -30,6 +33,9 @@ namespace FirstTextRPG
 
                 gameStart.introAnswerChecker(Console.ReadLine()); //Check for response
             }
+            //TODO: add character creation and classes here, for now we running default, jack shit
+            Console.Clear(); //clears console
+            Console.WriteLine(campSite.campQuestion); //bringing player to campsite and asking them what they want to do
                 Console.ReadKey(); //makes user hit any key to exit
         }
     }
