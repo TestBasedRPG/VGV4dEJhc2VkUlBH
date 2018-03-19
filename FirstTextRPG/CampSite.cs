@@ -32,7 +32,7 @@ namespace FirstTextRPG
                 /*///////////////////////////////////////////////////////////////////////////////////////////////////////
                  * 
                  * use random number generator to explore, each biome should have a % chance to find
-                 *also have a % chance for combat or finding a place within the biome
+                 * also have a % chance for combat or finding a place within the biome
                  * and a % chance to find nothing, but make it lower than combat, by alot
                  * make some biomes require certain amount of exploration, like corruption of champions
                  * for now, we just test random encounter, or hardcore exploring shudila and the plains
